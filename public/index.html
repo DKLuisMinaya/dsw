@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Juego de Cartas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🎲 ¡Toca el mazo para sacar una carta! 🎲</h1>
+  <div class="contador">Cartas sacadas: <span id="counter">0</span></div>
+
+  <div class="table">
+    <div class="card poker-card" id="deck" onclick="drawCard()">
+      <div class="back"></div>
+    </div>
+
+    <div class="card poker-card flipped hidden" id="card-display">
+      <div class="front">
+        <p id="challenge-text"></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="history">
+    <h2>📚 Historial</h2>
+    <ul id="history-list"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
